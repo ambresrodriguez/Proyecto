@@ -1,0 +1,99 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package proyecto;
+
+/**
+ *
+ * @author ALUMNOS-FP
+ */
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Proyecto {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner teclado = new Scanner(System.in);
+        int resp;
+
+        //ArrayList
+        ArrayList<Usuarios> list_usuarios = new ArrayList<>();
+        ArrayList<Favorito> list_favorito = new ArrayList<>();
+        ArrayList<Eventos> list_eventos = new ArrayList<>();
+
+        //hashmap
+        HashMap<String, Usuarios> map_usuarios = new HashMap<>();
+        HashMap<Integer, Eventos> map_eventos = new HashMap<>();
+
+        do {
+            System.out.println("Escoja una de las siguientes opciones:");
+            System.out.println("1.Añadir usuario");
+            System.out.println("2.Eliminar usuario");
+            System.out.println("3.Añadir evento");
+            System.out.println("4.Eliminar evento");
+            System.out.println("5.Añadir galeria");
+            System.out.println("6.Eliminar galeria");
+            System.out.println("7.Añadir favorito");
+            System.out.println("8.Eliminar favorito");
+            System.out.println("9.Salir");
+            System.out.println("Ingrese la opción elegida: ");
+            resp = teclado.nextInt();
+            comprobar(resp);
+            teclado.nextLine();
+
+            switch (resp) {
+                case 1:
+                    anadir_usuario(teclado, map_usuarios);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    System.out.println("Fin del programa.");
+            }
+        } while (resp != 9);
+    }
+
+    public static void comprobar(int resp) {
+        if (resp > 9 || resp < 1) {
+            System.out.println("Numero incorrecto escoja una de las opciones.");
+        }
+    }
+
+    public static void anadir_usuario(Scanner teclado, HashMap<String, Usuarios> map_usuarios) {
+        String correo, nombre, contrasena;
+        String correo_existente;
+
+        System.out.println("Introduzca los siguientes datos: ");
+        System.out.println("Email: ");
+        correo = teclado.nextLine();
+
+        System.out.println("Nombre:");
+        nombre = teclado.nextLine();
+
+        System.out.println("Contraseña: ");
+        contrasena = teclado.nextLine();
+
+        Usuarios nuevo_usuario = new Usuarios(nombre, correo, contrasena);
+
+    }
+
+}

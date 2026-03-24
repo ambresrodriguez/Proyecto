@@ -22,3 +22,7 @@ create table imagenes(
     imagen no se,
     id_galeria varchar(10);
 );
+create table favoritos(
+    id usuario int(10),
+    id evento int(10),
+);
