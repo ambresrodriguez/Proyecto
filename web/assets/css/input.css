@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import url(./reset.css);
+@import url(./general.css);
+header {
+    background-color: #ba007b;
+    padding: 0 2rem;
+    display : flex;
+    font-family: 'Archristy', 'Asenine', 'Asenst', 'Asent', 'Asenw';
+    align-items: center;
+    justify-content: space-around;
+    height: 72;
+    color: white;
+}
+nav {
+    display: flex;
+}
+
+.img_fraude{
+    width: 100%;
+    height: 340px;
+    display: block;
+    object-fit: cover;
+}
+.fraude{
+    width: 100%;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+}
+.title_fraude{
+    font-family: 'Archristy';
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;   
+}
+.fecha_fraude{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Archristy';
+
+}
+.fraude_overlay{
+    position: absolute;
+
+}
+.fraude_contenido{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+
+.sidebar-bloque{
+    background: #CF5FAA;
+    overflow: hidden;
+    
+}
+.sidebar-bloque-titulo{
+    color: white;
+    font-family: Archristy;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+
