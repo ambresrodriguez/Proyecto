@@ -55,7 +55,7 @@ public class Proyecto {
                     eliminar_usuario(teclado, map_usuarios);
                     break;
                 case 3:
-                    mostrarUsuarios(map_usuarios);
+
                     break;
                 case 4:
                     break;
@@ -109,17 +109,22 @@ public class Proyecto {
 
         if (!map_usuarios.containsKey(correo)) {
             System.out.println("El usuario no existe");
+            System.out.println("-----------");
+
         } else {
             map_usuarios.remove(correo);
             System.out.println("Usuario eliminado correctamente");
+            System.out.println("-----------");
+
         }
     }
+    /*
+    mostrar_usuarios(map_usuarios);
 
-    public static void mostrarUsuarios(HashMap<String, Usuarios> usuarios) {
+    public static void mostrar_usuarios(HashMap<String, Usuarios> usuarios) {
         for (Map.Entry<String, Usuarios> usuario : usuarios.entrySet()) {
-            System.out.println(usuario.getKey() + ": " + usuario.getValue().getNombre());
+            System.out.println(usuario.getKey() + "= " + usuario.getValue().getNombre());
         }
-    }
-
+    }*/
 
 }
