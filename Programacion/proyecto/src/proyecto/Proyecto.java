@@ -25,9 +25,7 @@ public class Proyecto {
         int resp;
 
         //ArrayList
-        ArrayList<Usuarios> list_usuarios = new ArrayList<>();
         ArrayList<Favorito> list_favorito = new ArrayList<>();
-        ArrayList<Eventos> list_eventos = new ArrayList<>();
 
         //hashmap
         HashMap<String, Usuarios> map_usuarios = new HashMap<>();
@@ -54,8 +52,10 @@ public class Proyecto {
                     anadir_usuario(teclado, map_usuarios);
                     break;
                 case 2:
+                    eliminar_usuario(teclado, map_usuarios);
                     break;
                 case 3:
+                    mostrarUsuarios(map_usuarios);
                     break;
                 case 4:
                     break;
@@ -81,20 +81,45 @@ public class Proyecto {
 
     public static void anadir_usuario(Scanner teclado, HashMap<String, Usuarios> map_usuarios) {
         String correo, nombre, contrasena;
-        String correo_existente;
 
-        System.out.println("Introduzca los siguientes datos: ");
-        System.out.println("Email: ");
-        correo = teclado.nextLine();
-
-        System.out.println("Nombre:");
+        System.out.println("--Introduzca los siguientes datos--");
+        System.out.println("\n-Nombre: ");
         nombre = teclado.nextLine();
-
-        System.out.println("Contraseña: ");
+        System.out.println("\n-Email: ");
+        correo = teclado.nextLine();
+        System.out.println("\n-Contraseña: ");
         contrasena = teclado.nextLine();
 
-        Usuarios nuevo_usuario = new Usuarios(nombre, correo, contrasena);
-
+        if (map_usuarios.containsKey(correo)) {
+            System.out.println("\nEl usuario ya existe");
+            System.out.println("-----------");
+        } else {
+            Usuarios usuario = new Usuarios(nombre, correo, contrasena);
+            map_usuarios.put(correo, usuario);
+            System.out.println("\nUsuario creado correctamente");
+            System.out.println("-----------");
+        }
     }
+
+    public static void eliminar_usuario(Scanner teclado, HashMap<String, Usuarios> map_usuarios) {
+        String correo;
+
+        System.out.println("Introduzca el correo del usuario que se desea eliminar:");
+        correo = teclado.nextLine();
+
+        if (!map_usuarios.containsKey(correo)) {
+            System.out.println("El usuario no existe");
+        } else {
+            map_usuarios.remove(correo);
+            System.out.println("Usuario eliminado correctamente");
+        }
+    }
+
+    public static void mostrarUsuarios(HashMap<String, Usuarios> usuarios) {
+        for (Map.Entry<String, Usuarios> usuario : usuarios.entrySet()) {
+            System.out.println(usuario.getKey() + ": " + usuario.getValue().getNombre());
+        }
+    }
+
 
 }
