@@ -67,8 +67,10 @@ public class Proyecto {
                     map_eventos = eliminar_galeria(teclado, map_eventos);
                     break;
                 case 7:
+                    anadir_favorito(teclado, map_eventos, map_usuarios);
                     break;
                 case 8:
+                    eliminar_favorito(teclado, map_eventos, map_usuarios);
                     break;
                 case 9:
                     System.out.println("Fin del programa.");
@@ -191,20 +193,20 @@ public class Proyecto {
 
         Eventos evento_elegido = null;
         for (Eventos evento : map_eventos.values()) {
-            if (evento.getId() = id_evento) {
+            if (evento.getId() == id_evento) {
                 evento_elegido = evento;
             }
         }
 
-        if (evento_elegido = null) {
+        if (evento_elegido == null) {
             System.out.println("El evento no existe");
-            return;
+            return null;
         }
 
         System.out.println("Introduzca el titulo de la galeria:");
         titulo = teclado.nextLine();
 
-        evento_elegido.getMap_galerias().add(new Galeria(contador_galeria, titulo, id_evento));
+        evento_elegido.getMap_galerias().put(contador_galeria, new Galeria(contador_galeria, titulo, id_evento));
         contador_galeria++;
         System.out.println("Galeria creada correctamente");
         return map_eventos;
@@ -212,15 +214,104 @@ public class Proyecto {
 
     public static HashMap<Integer, Eventos> eliminar_galeria(Scanner teclado, HashMap<Integer, Eventos> map_eventos) {
         for (Eventos evento : map_eventos.values()) {
-            int id_evento;
-            String titulo_evento;
-
-            id_evento = evento.getId();
-            titulo_evento = evento.getTitulo();
-
+            int id_evento = evento.getId();
+            String titulo_evento = evento.getTitulo();
+            System.out.println("--istado de eventos--");
+            System.out.printf("\n-id: %d", id_evento);
+            System.out.printf("\n-titulo: %s", titulo_evento);
+            System.out.println("\n---------");
         }
+
+        System.out.println("\n introduzca el id del evento donde se va a eliminar:");
+        int id_evento = teclado.nextInt();
+        teclado.nextLine();
+
+        Eventos evento_elegido = null;
+        for (Eventos evento : map_eventos.values()) {
+            if (evento.getId() == id_evento) {
+                evento_elegido = evento;
+            }
+        }
+
+        if (evento_elegido == null) {
+            System.out.println("El evento no existe");
+            return map_eventos;
+        }
+
+        for (Galeria galeria : evento_elegido.getMap_galerias().values()) {
+            int id_galeria = galeria.getId();
+            String titulo_galeria = galeria.getTitulo();
+            System.out.printf("\n-id: %d", id_galeria);
+            System.out.printf("\n-titulo: %s", titulo_galeria);
+            System.out.println("---------");
+        }
+
+        System.out.println("\nIntroduzca el id de la galeria a eliminar: ");
+        int id_galeria = teclado.nextInt();
+        teclado.nextLine();
+
+        if (!evento_elegido.getMap_galerias().containsKey(id_galeria)) {
+            System.out.println("La galeria no existe");
+        } else {
+            evento_elegido.getMap_galerias().remove(id_galeria);
+            System.out.println("Galeria eliminada correctamente");
+        }
+        return map_eventos;
     }
 
+    public static void anadir_favorito(Scanner teclado, HashMap<Integer, Eventos> map_eventos, HashMap<String, Usuarios> map_usuarios) {
+        for (Eventos evento : map_eventos.values()) {
+            int id_evento = evento.getId();
+            String titulo_evento = evento.getTitulo();
+            System.out.println("\nid: " + id_evento);
+            System.out.println("\ntitulo: " + titulo_evento);
+            System.out.println("\n--------------------");
+        }
+
+        for (Usuarios usuario : map_usuarios.values()) {
+            String correo_usuario = usuario.getEmail();
+            String nombre_usuario = usuario.getNombre();
+            System.out.println("\nCorreo: " + correo_usuario);
+            System.out.println("\nNombre: " + nombre_usuario);
+            System.out.println("------------------");
+        }
+
+        System.out.println("\nIntroduzca el id del evento: ");
+        int id_evento = teclado.nextInt();
+        teclado.nextLine();
+        System.out.println("\nIntroduzca el correo del usuario: ");
+        String correo = teclado.nextLine();
+
+        boolean evento_existe = false;
+        for (Eventos evento : map_eventos.values()) {
+            if (evento.getId() = id_evento) {
+                evento_existe = true;
+            }
+        }
+
+        boolean usuario_existe = false;
+        for (Usuarios usuario : map_usuarios.values()) {
+            String correo_usuario = usuario.getEmail();
+            if (correo_usuario.equals(correo)) {
+                usuario_existe = true;
+            }
+        }
+
+        if (!evento_existe) {
+            System.out.println("El evento no existe");
+        } else if (!usuario_existe) {
+            System.out.println("El usuario no existe");
+        } else {
+            Favorito favorito_anadido = new Favorito(correo, id_evento);
+            list_favorito.add(favorito_anadido);
+            System.out.println("Favorito creado correctamente");
+        }
+
+    }
+
+    public static void eliminar_favorito(Scanner teclado, HashMap<Integer, Eventos> map_eventos, HashMap<String, Usuarios> map_usuarios) {
+
+    }
     /*
     mostrar_usuarios(map_usuarios);
 

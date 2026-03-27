@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * @author ALUMNOS-FP
  */
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Eventos {
 
@@ -20,7 +21,7 @@ public class Eventos {
     private String titulo;
     private String ubicacion;
     private String descripcion;
-    private ArrayList<Galeria> coleccion_galerias;
+    private HashMap<Integer, Galeria> map_galerias = new HashMap<>();
 
     public Eventos(int id, String fecha, String titulo, String ubicacion, String descripcion) {
         this.id = id;
@@ -28,13 +29,14 @@ public class Eventos {
         this.titulo = titulo;
         this.ubicacion = ubicacion;
         this.descripcion = descripcion;
-        this.coleccion_galerias = new ArrayList<>();
+        this.map_galerias = new HashMap<Integer, Galeria>();
     }
 
     //getter
     public int getId() {
         return id;
     }
+
 
     public String getFecha() {
         return fecha;
@@ -52,8 +54,8 @@ public class Eventos {
         return descripcion;
     }
 
-    public ArrayList<Galeria> getColeccion_galerias() {
-        return coleccion_galerias;
+    public HashMap<Integer, Galeria> getMap_galerias() {
+        return map_galerias;
     }
     //setter
 
@@ -77,8 +79,8 @@ public class Eventos {
         this.descripcion = descripcion;
     }
 
-    public void setColeccion_galerias(ArrayList<Galeria> coleccion_galerias) {
-        this.coleccion_galerias = coleccion_galerias;
+    public void setMap_galerias(HashMap<Integer, Galeria> map_galerias) {
+        this.map_galerias = map_galerias;
     }
 
     @Override
