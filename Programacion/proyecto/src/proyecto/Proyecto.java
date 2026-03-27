@@ -49,19 +49,22 @@ public class Proyecto {
 
             switch (resp) {
                 case 1:
-                    anadir_usuario(teclado, map_usuarios);
+                    map_usuarios = anadir_usuario(teclado, map_usuarios);
                     break;
                 case 2:
-                    eliminar_usuario(teclado, map_usuarios);
+                    map_usuarios = eliminar_usuario(teclado, map_usuarios);
                     break;
                 case 3:
-
+                    map_eventos = anadir_evento(teclado, map_eventos);
                     break;
                 case 4:
+                    map_eventos = eliminar_evento(teclado, map_eventos);
                     break;
                 case 5:
+                    map_eventos = anadir_galeria(teclado, map_eventos);
                     break;
                 case 6:
+                    map_eventos = eliminar_galeria(teclado, map_eventos);
                     break;
                 case 7:
                     break;
@@ -79,7 +82,7 @@ public class Proyecto {
         }
     }
 
-    public static void anadir_usuario(Scanner teclado, HashMap<String, Usuarios> map_usuarios) {
+    public static HashMap<String, Usuarios> anadir_usuario(Scanner teclado, HashMap<String, Usuarios> map_usuarios) {
         String correo, nombre, contrasena;
 
         System.out.println("--Introduzca los siguientes datos--");
@@ -99,9 +102,10 @@ public class Proyecto {
             System.out.println("\nUsuario creado correctamente");
             System.out.println("-----------");
         }
+        return map_usuarios;
     }
 
-    public static void eliminar_usuario(Scanner teclado, HashMap<String, Usuarios> map_usuarios) {
+    public static HashMap<String, Usuarios> eliminar_usuario(Scanner teclado, HashMap<String, Usuarios> map_usuarios) {
         String correo;
 
         System.out.println("Introduzca el correo del usuario que se desea eliminar:");
@@ -117,11 +121,111 @@ public class Proyecto {
             System.out.println("-----------");
 
         }
+        return map_usuarios;
     }
+
+    public static HashMap<Integer, Eventos> anadir_evento(Scanner teclado, HashMap<Integer, Eventos> map_eventos) {
+        String fecha, titulo, ubicacion, descripcion;
+        int contador_evento = 0;
+
+        System.out.println("Ingrese los siguientes datos: ");
+        System.out.println("-Fecha: ");
+        fecha = teclado.nextLine();
+        System.out.println("-Titulo: ");
+        titulo = teclado.nextLine();
+        System.out.println("-Ubicacion: ");
+        ubicacion = teclado.nextLine();
+        System.out.println("-Descripcion");
+        descripcion = teclado.nextLine();
+
+        map_eventos.put(contador_evento, new Eventos(contador_evento, fecha, titulo, ubicacion, descripcion));
+        contador_evento++;
+        System.out.println("Evento creado correctamente");
+
+        return map_eventos;
+    }
+
+    public static HashMap<Integer, Eventos> eliminar_evento(Scanner teclado, HashMap<Integer, Eventos> map_eventos) {
+        int id_evento, id_evento_borrar;
+        String titulo_evento;
+
+        for (Eventos evento : map_eventos.values()) {
+            id_evento = evento.getId();
+            titulo_evento = evento.getTitulo();
+            System.out.println("--Listado de eventos--");
+            System.out.printf("\n-id: %d", id_evento);
+            System.out.printf("\n-titulo: %s", titulo_evento);
+            System.out.println("\n-----------------");
+
+        }
+        System.out.println("Introduzca el id del evento que se desea eliminar: ");
+        id_evento_borrar = teclado.nextInt();
+
+        if (!map_eventos.containsKey(id_evento_borrar)) {
+            System.out.println("El evento no existe");
+        } else {
+            map_eventos.remove(id_evento_borrar);
+            System.out.println("Evento eliminado correctamente");
+        }
+
+        return map_eventos;
+    }
+
+    public static HashMap<Integer, Eventos> anadir_galeria(Scanner teclado, HashMap<Integer, Eventos> map_eventos) {
+        int id_evento, contador_galeria = 0;
+        String titulo_evento, titulo;
+
+        for (Eventos evento : map_eventos.values()) {
+            id_evento = evento.getId();
+            titulo_evento = evento.getTitulo();
+            System.out.println("--Listado de eventos--");
+            System.out.printf("\n-Id: %d", id_evento);
+            System.out.printf("\n-Titulo: %s", titulo_evento);
+            System.out.println("\n----------");
+
+        }
+
+        System.out.println("\nintroduzca el id del evento donde se va a añadir la galeria:");
+        id_evento = teclado.nextInt();
+        teclado.nextLine();
+
+        Eventos evento_elegido = null;
+        for (Eventos evento : map_eventos.values()) {
+            if (evento.getId() = id_evento) {
+                evento_elegido = evento;
+            }
+        }
+
+        if (evento_elegido = null) {
+            System.out.println("El evento no existe");
+            return;
+        }
+
+        System.out.println("Introduzca el titulo de la galeria:");
+        titulo = teclado.nextLine();
+
+        evento_elegido.getMap_galerias().add(new Galeria(contador_galeria, titulo, id_evento));
+        contador_galeria++;
+        System.out.println("Galeria creada correctamente");
+        return map_eventos;
+    }
+
+    public static HashMap<Integer, Eventos> eliminar_galeria(Scanner teclado, HashMap<Integer, Eventos> map_eventos) {
+        for (Eventos evento : map_eventos.values()) {
+            int id_evento;
+            String titulo_evento;
+
+            id_evento = evento.getId();
+            titulo_evento = evento.getTitulo();
+
+        }
+    }
+
     /*
     mostrar_usuarios(map_usuarios);
 
-    public static void mostrar_usuarios(HashMap<String, Usuarios> usuarios) {
+    public static void mostrar_u
+    suarios(HashMap<String, Usuarios> usuarios) {
         for (Map.Entry<String, Usuarios> usuario : usuarios.entrySet()) {
             System.out.println(usuario.getKey() + "= " + usuario.getValue().getNombre());
         }
