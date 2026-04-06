@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import url(./reset.css);
 @import url(./general.css);
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+
+  --color-rosa: oklch(0.5209 0.2179 349.24);
+  --color-gris: oklch(0.4495 0 0);
+  --color-azul: oklch(0.653 0.1422 236.8);
+  --color-naranja: oklch(0.7245 0.189 50.94);
+
+}
+
+
 header {
     background-color: #ba007b;
     padding: 0 2rem;

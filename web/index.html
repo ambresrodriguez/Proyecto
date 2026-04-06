@@ -18,45 +18,37 @@
         }
   </script>
 </head>
-<body>
+<body class="bg-white text-black">
     <header>
         <a href="index.html">
             <img class="logo_2" src="./assets/images/happines-and-co-propuesta-02.png" alt="HAPPINESS&Co"></a>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="historial.html">Historial</a>
-            <a href="sobre_nosotros.html">Sobre nosotros</a>
-            <a href="fuentes.html">Fuentes</a>
-            <a href="contacto.html">Contacto</a>
+        <nav class="bg-rosa flex items-center px-6 py-3 gap-8">
+            <a href="index.html" class="text-white text-lg hover:text-purple-300">Inicio</a>
+            <a href="eventos.html" class="text-white text-lg hover:text-purple-300">Eventos</a>
+            <a href="historial.html"class="text-white text-lg hover:text-purple-300">Historial</a>
+            <a href="sobre_nosotros.html"class="text-white text-lg hover:text-purple-300">Sobre nosotros</a>
+            <a href="fuentes.html"class="text-white text-lg hover:text-purple-300">Fuentes</a>
+            <a href="contacto.html"class="text-white text-lg hover:text-purple-300">Contacto</a>
         </nav>
     </header>
     <main>
-        <div class="fraude">
-            <div class="fraude_overlay"></div>
-            <div class="fraude_contenido">
-            <a href="" >
-                <img src="./assets/images/fraude-1973-pelicula-imagen10.jpg" alt="Fraude" class="img_fraude"></a>
-                <h1 class="title_fraude">Fraude</h1>
-                <span class="fecha_fraude">20 de septiembre de 2026</span>
+        <div class="relative bg-black h-52 overflow-hidden">
+            <img src="./assets/images/fraude-1973-pelicula-imagen10.jpg" class="w-full h-full object-cover opacity-100"/>
+            <div class="absolute inset-0 flex flex-col justify-between p-6"></div>
+                <p class="text-black text-base text-rigth">20 de Septiembre de 2026</p>
+                <h1 class="text-white text-4xl font-bold">Fraude</h1>  <!-- el font bold es texto en negrita-->
             </div>
-        </div>
+        </div> 
+
+        <!--contenido general/principal-->
+        <div class="bg-rosa flex gap-0 p-0">
 
         <!--barra lateral |  sidebar-->
-        <aside class="sidebar">
-            <div class="sidebar-bloque">
-                <div class="sidebar-bloque-titulo">Recomendados</div>
 
-                <a href="eventos.html" class="sidebar-evento">
-                    <img src="./assets/images/silvia-peres-cruz-foto.jpg" alt="Sílvia Pérez Cruz">
-                    <div class="sidebar-evento-contenido">
-                        <div class="sidebar-evento-fecha">25-06-2026</div>
-                        <div class="sidebar-evento-titulo">Sílvia Pérez Cruz</div>
-                        <div class="sidebar-evento-desc">Nueva y originales canciones para compartir, con sonidos familiares y nuevos horizontes</div>
-                    </div>
-                </a> 
-            </div>
-        </aside>
+        <div class="bg-rosa w-64 p-4">
+            
+        </div>
+        </div>
     </main>
     <footer>
         <img src="" alt="">
