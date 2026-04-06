@@ -67,10 +67,10 @@ public class Proyecto {
                     map_eventos = eliminar_galeria(teclado, map_eventos);
                     break;
                 case 7:
-                    anadir_favorito(teclado, map_eventos, map_usuarios);
+                    list_favorito = anadir_favorito(teclado, map_eventos, map_usuarios, list_favorito);
                     break;
                 case 8:
-                    eliminar_favorito(teclado, map_eventos, map_usuarios);
+                    list_favorito = eliminar_favorito(teclado, map_eventos, map_usuarios, list_favorito);
                     break;
                 case 9:
                     System.out.println("Fin del programa.");
@@ -259,11 +259,12 @@ public class Proyecto {
         return map_eventos;
     }
 
-    public static void anadir_favorito(Scanner teclado, HashMap<Integer, Eventos> map_eventos, HashMap<String, Usuarios> map_usuarios) {
+    public static ArrayList<Favorito> anadir_favorito(Scanner teclado, HashMap<Integer, Eventos> map_eventos, HashMap<String, Usuarios> map_usuarios, ArrayList<Favorito> list_favorito) {
         for (Eventos evento : map_eventos.values()) {
-            int id_evento = evento.getId();
+            int id_mostrar = evento.getId();
             String titulo_evento = evento.getTitulo();
-            System.out.println("\nid: " + id_evento);
+            System.out.println("\n--Eventos--");
+            System.out.println("\nid: " + id_mostrar);
             System.out.println("\ntitulo: " + titulo_evento);
             System.out.println("\n--------------------");
         }
@@ -271,20 +272,22 @@ public class Proyecto {
         for (Usuarios usuario : map_usuarios.values()) {
             String correo_usuario = usuario.getEmail();
             String nombre_usuario = usuario.getNombre();
+            System.out.println("\n--Usuarios--");
             System.out.println("\nCorreo: " + correo_usuario);
             System.out.println("\nNombre: " + nombre_usuario);
             System.out.println("------------------");
         }
 
         System.out.println("\nIntroduzca el id del evento: ");
-        int id_evento = teclado.nextInt();
+        int id_evento_favorito = teclado.nextInt();
         teclado.nextLine();
+
         System.out.println("\nIntroduzca el correo del usuario: ");
         String correo = teclado.nextLine();
 
         boolean evento_existe = false;
         for (Eventos evento : map_eventos.values()) {
-            if (evento.getId() = id_evento) {
+            if (evento.getId() == id_evento_favorito) {
                 evento_existe = true;
             }
         }
@@ -302,24 +305,53 @@ public class Proyecto {
         } else if (!usuario_existe) {
             System.out.println("El usuario no existe");
         } else {
-            Favorito favorito_anadido = new Favorito(correo, id_evento);
+            Favorito favorito_anadido = new Favorito(correo, id_evento_favorito);
             list_favorito.add(favorito_anadido);
             System.out.println("Favorito creado correctamente");
         }
-
+        return list_favorito;
     }
 
-    public static void eliminar_favorito(Scanner teclado, HashMap<Integer, Eventos> map_eventos, HashMap<String, Usuarios> map_usuarios) {
+    public static ArrayList<Favorito> eliminar_favorito(Scanner teclado, HashMap<Integer, Eventos> map_eventos, HashMap<String, Usuarios> map_usuarios, ArrayList<Favorito> list_favorito) {
+        int id_evento_favorito;
+        String correo;
 
-    }
-    /*
-    mostrar_usuarios(map_usuarios);
+        for (Favorito favorito : list_favorito) {
+            String correo_usuario_favorito;
+            int mostrar_id;
 
-    public static void mostrar_u
-    suarios(HashMap<String, Usuarios> usuarios) {
-        for (Map.Entry<String, Usuarios> usuario : usuarios.entrySet()) {
-            System.out.println(usuario.getKey() + "= " + usuario.getValue().getNombre());
+            correo_usuario_favorito = favorito.getCorreo_usuario();
+            mostrar_id = favorito.getId_evento();
+            System.out.println("\n--Favoritos--");
+            System.out.printf("\nCorreo: %s", correo_usuario_favorito);
+            System.out.printf("\nId del evento: %s", mostrar_id);
+            System.out.println("\n-------------------");
         }
-    }*/
 
+        System.out.println("\nIntroduzca el id del evento: ");
+        id_evento_favorito = teclado.nextInt();
+        teclado.nextLine();
+
+        System.out.println("\nIntroduzca el correo: ");
+        correo = teclado.nextLine();
+
+        Favorito eliminar_favorito = null;
+        for (Favorito favorito : list_favorito) {
+            int id_favorito = favorito.getId_evento();
+            String correo_favorito = favorito.getCorreo_usuario();
+            if (id_favorito == id_evento_favorito && correo_favorito.equals(correo)) {
+                eliminar_favorito = favorito;
+            }
+        }
+
+        if (eliminar_favorito == null) {
+            System.out.println("\nEl favorito no existe.");
+            System.out.println("\n------------------");
+        } else {
+            list_favorito.remove(eliminar_favorito);
+            System.out.println("\nFavorito eliminado correctamente.");
+            System.out.println("\n---------------");
+        }
+        return list_favorito;
+    }
 }
