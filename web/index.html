@@ -1,58 +1,271 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HAPPINESS&Co</title>
-    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-           theme: {
-            extend: {
+      tailwind.config = {
+        theme: {
+          extend: {
             colors: {
-                brand: '#ff6600', // variable de color personalizada
-                    }
-                }
-            }
-        }
-  </script>
-</head>
-<body class="bg-white text-black">
+              brand: "#ff6600", // variable de color personalizada
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-black">
     <header>
-        <a href="index.html">
-            <img class="logo_2" src="./assets/images/happines-and-co-propuesta-02.png" alt="HAPPINESS&Co"></a>
-        <nav class="bg-rosa flex items-center px-6 py-3 gap-8">
-            <a href="index.html" class="text-white text-lg hover:text-purple-300">Inicio</a>
-            <a href="eventos.html" class="text-white text-lg hover:text-purple-300">Eventos</a>
-            <a href="historial.html"class="text-white text-lg hover:text-purple-300">Historial</a>
-            <a href="sobre_nosotros.html"class="text-white text-lg hover:text-purple-300">Sobre nosotros</a>
-            <a href="fuentes.html"class="text-white text-lg hover:text-purple-300">Fuentes</a>
-            <a href="contacto.html"class="text-white text-lg hover:text-purple-300">Contacto</a>
-        </nav>
+      <!--object contain ajusta la imagen||object-cover la recorta-->
+      <nav class="bg-rosa flex items-left py-4 gap-30">
+        <a href="index.html" class="flex flex-col justify-center">
+          <img
+            class="logo_2 h-8"
+            src="./assets/images/happines-and-co-propuesta-02.png"
+          />
+        </a>
+        <a href="index.html" class="text-white text-lg hover:text-purple-300"
+          >Inicio</a
+        >
+        <a href="eventos.html" class="text-white text-lg hover:text-purple-300"
+          >Eventos</a
+        >
+        <a
+          href="historial.html"
+          class="text-white text-lg hover:text-purple-300"
+          >Historial</a
+        >
+        <a
+          href="sobre_nosotros.html"
+          class="text-white text-lg hover:text-purple-300"
+          >Sobre nosotros</a
+        >
+        <a href="fuentes.html" class="text-white text-lg hover:text-purple-300"
+          >Fuentes</a
+        >
+        <a href="contacto.html" class="text-white text-lg hover:text-purple-300"
+          >Contacto</a
+        >
+      </nav>
     </header>
     <main>
-        <div class="relative bg-black h-52 overflow-hidden">
-            <img src="./assets/images/fraude-1973-pelicula-imagen10.jpg" class="w-full h-full object-cover opacity-100"/>
-            <div class="absolute inset-0 flex flex-col justify-between p-6"></div>
-                <p class="text-black text-base text-rigth">20 de Septiembre de 2026</p>
-                <h1 class="text-white text-4xl font-bold">Fraude</h1>  <!-- el font bold es texto en negrita-->
-            </div>
-        </div> 
+      <!--foto de encabezado-->
+      <div class="relative bg-black h-64 overflow-hidden text-white">
+        <img
+          src="./assets/images/fraude-1973-pelicula-imagen10.jpg"
+          class="w-full h-full object-cover opacity-50"
+        />
 
-        <!--contenido general/principal-->
-        <div class="bg-rosa flex gap-0 p-0">
+        <p class="absolute top-0 right-0 text-sm text-rigth text-2xl">
+          20 de Septiembre de 2026
+        </p>
+        <h1 class="absolute bottom-0 left-0 font-bold text-3xl">Fraude</h1>
+        <!-- el font bold es texto en negrita-->
+      </div>
 
+      <!--contenido general/principal-->
+      <div class="bg-white h-fit w-full flex flex-row">
         <!--barra lateral |  sidebar-->
 
-        <div class="bg-rosa w-64 p-4">
-            
+        <!--shrink hace que no se encoja-->
+        <!--recomendados-->
+        <!--rounded-full para redondear los bordes|| mb es margin bottom || inline-block ocupa lo que necesite dejandote ponerle ancho,alto,etc...-->
+        <div
+          class="bg-rosaclaro w-140 text-white text-xs font-bold px-3 py-1 rounded-md mb-4 inline-block"
+        >
+          RECOMENDADOS
+          <!--primer evento recomendado-->
+          <div class="bg-rosa rounded-lg p-2 h-30 mb-3 flex gap-2">
+            <img
+              src="./assets/images/silvia-peres-cruz-foto.jpg"
+              class="w-16 h-16 object-cover rounded"
+            />
+            <div>
+              <p class="text-white text-xs">25-06-2026</p>
+              <p class="text-white text-xs font-bold">Silvia Perez Cruz</p>
+              <!--mt es margin top-->
+              <p class="text-white text-xs mt-1">
+                Nueva y originales canciones para compartir, con sonidos
+                familiares y nuevos horizontes
+              </p>
+            </div>
+          </div>
+          <!--segundo evento recomendado-->
+          <div class="bg-azul rounded-lg p-2 h-30 mb-3 flex gap-2">
+            <img
+              src="./assets/images/fraude-1973-pelicula-imagen10.jpg"
+              class="w-16 h-16 object-cover rounded"
+            />
+            <div>
+              <p class="text-white text-xs">20-09-2026</p>
+              <p class="text-white text-xs font-bold">Fraude</p>
+              <p class="text-white text-xs mt-1">
+                Pelicula de 1973 sobre un falsificador de arte temido y admirado
+                por museos
+              </p>
+            </div>
+          </div>
+          <!--tercer evento recomendado-->
+          <div class="bg-naranja rounded-lg p-2 h-30 mb-3 flex gap-2">
+            <img
+              src="./assets/images/alvarez-duarte.jpg"
+              class="w-16 h-16 object-cover rounded"
+            />
+            <div>
+              <p class="text-white text-xs">21-07-2026</p>
+              <p class="text-white text-xs font-bold">
+                Luis Alvarez Duarte, escultor
+              </p>
+              <p class="text-white text-xs mt-1">
+                Un recorrido a través de la obra sacra y profana del imaginero y
+                escultor andaluz
+              </p>
+            </div>
+          </div>
         </div>
+
+        <div class="grid grid-cols-3 gap-8 p-4">
+          <!--Eventos-->
+          <!--primera fila-->
+          <div class="bg-rosa overflow-hidden rounded-md h-60">
+            <img
+              src="./assets/images/silvia-peres-cruz-foto.jpg"
+              class="w-full h-24 object-cover"
+            />
+            <div class="p-2">
+              <p class="text-white">25-06-2026</p>
+              <p class="text-white">Silvia Perez Cruz</p>
+              <p class="text-white mt-1">
+                Nuevas y originales canciones para compartir con sonidos
+                familiares y nuevos horizontes
+              </p>
+            </div>
+          </div>
+          <div class="bg-naranja overflow-hidden rounded-md h-60">
+            <img
+              src="./assets/images/alvarez-duarte.jpg"
+              class="w-full h-24 object-cover"
+            />
+            <div class="p-2">
+              <p class="text-white">21-07-2026</p>
+              <p class="text-white">Luís Álvarez Duarte, escultor</p>
+              <p class="text-white mt-1">
+                Un recorrido a través de la obras del imaginero y escultor
+                andaluz
+              </p>
+            </div>
+          </div>
+          <div class="bg-azul overflow-hidden rounded-md h-60">
+            <img
+              src="./assets/images/fraude-1973-pelicula-imagen10.jpg"
+              class="w-full h-24 object-cover"
+            />
+            <div class="p-2">
+              <p class="text-white">20-09-2026</p>
+              <p class="text-white">Fraude</p>
+              <p class="text-white mt-1">
+                Pelicula de 1973 sobre un falsificador de arte temido y admirado
+                por museos
+              </p>
+            </div>
+          </div>
+          <!--segunda fila-->
+          <div class="bg-azul overflow-hidden rounded-md h-60">
+            <img
+              src="./assets/images/constelaciones-foto.jpg"
+              class="w-full h-24 object-cover"
+            />
+            <div class="p-2">
+              <p class="text-white">15-06-2026</p>
+              <p class="text-white">Constelaciones</p>
+              <p class="text-white mt-1">
+                Una obra de teatro contemporánea que explora la relacion emntre
+                una fìsica cuántica y un apicultor
+              </p>
+            </div>
+          </div>
+          <div class="bg-rosa overflow-hidden rounded-md h-60">
+            <div class="flex flex-col justify-center items-center">
+              <img
+                src="./assets/images/mamamia-musical.jfif"
+                class="w-full h-24 object-cover"
+              />
+            </div>
+            <div class="p-2">
+              <p class="text-white">24-03-2026</p>
+              <p class="text-white">Mamma Mía! El Musical. Gijón</p>
+              <p class="text-white mt-1">
+                comedia romántica con canciones de ABBA sobre una boda y un
+                misterio familiar.
+              </p>
+            </div>
+          </div>
+          <div class="bg-naranja overflow-hidden rounded-md h-60">
+            <img
+              src="./assets/images/Exposicion-CIP-Esculturas-Cristobal-Aviles-24-uai-1500x750.jpg"
+              class="w-full h-24 object-cover"
+            />
+            <div class="p-2">
+              <p class="text-white">15-08-2026</p>
+              <p class="text-white">Cristóbal Avilés</p>
+              <p class="text-white mt-1">
+                Una exposición dedicada al creador Cristóbal Aviles a traves de obras realizadas con hierro, piedra y cerámica
+              </p>
+            </div>
+          </div>
+          <!--tercera fila-->
+          <div class="bg-naranja overflow-hidden rounded-md h-60">
+            <img
+              src="./assets/images/mujeres en la musica.jpg"
+              class="w-full h-24 object-cover"
+            />
+            <div class="p-2">
+              <p class="text-white">05-06-2026</p>
+              <p class="text-white">Mujeres en la música</p>
+              <p class="text-white mt-1">
+                Exposicion que reúne imágenes y materiales de artistas como Rocio Jurado o Aitana
+              </p>
+            </div>
+          </div>
+          <div class="bg-gris overflow-hidden rounded-md h-60">
+            <div class="flex flex-col justify-center items-center">
+              <img
+                src="./assets/images/fiesta del bollo.jpg"
+                class="w-full h-24 object-cover"
+              />
+            </div>
+            <div class="p-2">
+              <p class="text-white">06-04-2026</p>
+              <p class="text-white">Fiesta de El Bollo. Avilés</p>
+              <p class="text-white mt-1">
+                celebración primaveral con desfiles, comida en la calle y ambiente festivo que cierra la Semana Santa.
+              </p>
+            </div>
+          </div>
+          <div class="bg-azul overflow-hidden rounded-md h-60">
+            <img
+              src="./assets/images/the silence.jpg"
+              class="w-full h-24 object-cover"
+            />
+            <div class="p-2">
+              <p class="text-white">02-10-2026</p>
+              <p class="text-white">The Silence</p>
+              <p class="text-white mt-1">
+                Para su obra autoficticoa el dramaturgo y director Flak Richter se centra en su propia historia familiar
+              </p>
+            </div>
+          </div>
+
         </div>
+      </div>
     </main>
     <footer>
-        <img src="" alt="">
-        <h2>© Copyright 2026</h2>
+      <img src="" alt="" />
+      <h2>© Copyright 2026</h2>
     </footer>
-</body>
+  </body>
 </html>
