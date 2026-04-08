@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HAPPINESS&Co</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de eventos</title>
     <link rel="stylesheet" href="./assets/css/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -17,10 +17,9 @@
         },
       };
     </script>
-  </head>
-  <body class="bg-white text-black">
+</head>
+<body class="bg-white text-black">
     <header>
-      <!--object contain ajusta la imagen||object-cover la recorta-->
       <nav class="bg-rosa flex items-left py-4 gap-30 fixed top-0 w-full y-20 z-100">
         <a href="index.html" class="flex flex-col justify-center">
           <img
@@ -31,9 +30,7 @@
         <a href="index.html" class="text-white text-lg hover:text-purple-300"
           >Inicio</a
         >
-        <a
-          href="proximosEventos.html"
-          class="text-white text-lg hover:text-purple-300"
+        <a href="proximosEventos.html" class="text-white text-lg hover:text-purple-300"
           >Proximos Eventos</a
         >
         <a
@@ -41,7 +38,8 @@
           class="text-white text-lg hover:text-purple-300"
           >Historial de eventos</a
         >
-        <a href="sobrenosotros.html"
+        <a
+          href="sobrenosotros.html"
           class="text-white text-lg hover:text-purple-300"
           >Sobre nosotros</a
         >
@@ -53,34 +51,17 @@
         >
       </nav>
     </header>
-    <main>
-      <!--foto de encabezado-->
-      <div class="relative bg-black h-64 overflow-hidden text-white mt-15">
-        <img
-          src="./assets/images/fraude-1973-pelicula-imagen10.jpg"
-          class="w-full h-full object-cover opacity-50"
-        />
-
-        <p class="absolute top-0 right-0 text-sm text-rigth text-2xl">
-          20 de Septiembre de 2026
-        </p>
-        <h1 class="absolute bottom-0 left-0 font-bold text-3xl">Fraude</h1>
-        <!-- el font bold es texto en negrita-->
-      </div>
-
-      <!--contenido general/principal-->
+    <main class="mt-20">
+        <!--contenido general/principal-->
       <div class="bg-white h-fit w-full flex flex-row">
         <!--barra lateral |  sidebar-->
 
-        <!--shrink hace que no se encoja-->
-        <!--recomendados-->
-        <!--rounded-full para redondear los bordes|| mb es margin bottom || inline-block ocupa lo que necesite dejandote ponerle ancho,alto,etc...-->
         <div
-          class="bg-rosaclaro w-140   text-white text-xs font-bold px-3 py-1 rounded-md inline-block"
+          class="bg-rosaclaro w-140 text-white text-xs font-bold px-3 py-1 rounded-md inline-block"
         >
           RECOMENDADOS
           <!--primer evento recomendado-->
-          <div class="bg-rosa rounded-lg p-2 h-34 mb-3 flex gap-2">
+          <div class="bg-rosa rounded-lg p-2 h-30 mb-3 flex gap-2">
             <img
               src="./assets/images/silvia-peres-cruz-foto.jpg"
               class="w-16 h-16 object-cover rounded"
@@ -135,10 +116,11 @@
             />
             <div>
               <p class="text-white text-xs">15-06-2026</p>
-              <p class="text-white text-xs font-bold">Constelaciones</p>
+              <p class="text-white text-xs font-bold">
+                Constelaciones
+              </p>
               <p class="text-white text-xs mt-1">
-                Una obra de teatro contemporánea que explora la relacion emntre
-                una fìsica cuántica y un apicultor
+                Una obra de teatro contemporánea que explora la relacion emntre una fìsica cuántica y un apicultor
               </p>
             </div>
           </div>
@@ -154,70 +136,29 @@
                 Fiesta de El Bollo. Avilés
               </p>
               <p class="text-white text-xs mt-1">
-                Celebración primaveral con desfiles, comida en la calle y
-                ambiente festivo que cierra la Semana Santa.
+                Celebración primaveral con desfiles, comida en la calle y ambiente festivo que cierra la Semana Santa.
               </p>
             </div>
           </div>
-        </div>
 
+        </div>
         <!--Eventos-->
         <div class="grid grid-cols-3 gap-8 p-4">
+          
           <!--primera fila-->
-          <div class="bg-rosa overflow-hidden rounded-md h-60 shadow-lg">
-            <img
-              src="./assets/images/silvia-peres-cruz-foto.jpg"
-              class="w-full h-24 object-cover"
-            />
-            <div class="p-2">
-              <p class="text-white">25-06-2026</p>
-              <p class="text-white">Silvia Perez Cruz</p>
-              <p class="text-white mt-1">
-                Nuevas y originales canciones para compartir con sonidos
-                familiares y nuevos horizontes
-              </p>
+          <div class="bg-gris overflow-hidden rounded-md h-60">
+            <div class="flex flex-col justify-center items-center">
+              <img
+                src="./assets/images/fiesta del bollo.jpg"
+                class="w-full h-24 object-cover"
+              />
             </div>
-          </div>
-          <div class="bg-naranja overflow-hidden rounded-md h-60">
-            <img
-              src="./assets/images/alvarez-duarte.jpg"
-              class="w-full h-24 object-cover"
-            />
             <div class="p-2">
-              <p class="text-white">21-07-2026</p>
-              <p class="text-white">Luís Álvarez Duarte, escultor</p>
+              <p class="text-white">06-04-2026</p>
+              <p class="text-white">Fiesta de El Bollo. Avilés</p>
               <p class="text-white mt-1">
-                Un recorrido a través de la obras del imaginero y escultor
-                andaluz
-              </p>
-            </div>
-          </div>
-          <div class="bg-azul overflow-hidden rounded-md h-60">
-            <img
-              src="./assets/images/fraude-1973-pelicula-imagen10.jpg"
-              class="w-full h-24 object-cover"
-            />
-            <div class="p-2">
-              <p class="text-white">20-09-2026</p>
-              <p class="text-white">Fraude</p>
-              <p class="text-white mt-1">
-                Pelicula de 1973 sobre un falsificador de arte temido y admirado
-                por museos
-              </p>
-            </div>
-          </div>
-          <!--segunda fila-->
-          <div class="bg-azul overflow-hidden rounded-md h-60">
-            <img
-              src="./assets/images/constelaciones-foto.jpg"
-              class="w-full h-24 object-cover"
-            />
-            <div class="p-2">
-              <p class="text-white">15-06-2026</p>
-              <p class="text-white">Constelaciones</p>
-              <p class="text-white mt-1">
-                Una obra de teatro contemporánea que explora la relacion emntre
-                una fìsica cuántica y un apicultor
+                Celebración primaveral con desfiles, comida en la calle y
+                ambiente festivo que cierra la Semana Santa.
               </p>
             </div>
           </div>
@@ -237,67 +178,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-naranja overflow-hidden rounded-md h-60">
-            <img
-              src="./assets/images/Exposicion-CIP-Esculturas-Cristobal-Aviles-24-uai-1500x750.jpg"
-              class="w-full h-24 object-cover"
-            />
-            <div class="p-2">
-              <p class="text-white">15-08-2026</p>
-              <p class="text-white">Cristóbal Avilés</p>
-              <p class="text-white mt-1">
-                Una exposición dedicada al creador Cristóbal Aviles a traves de
-                obras realizadas con hierro, piedra y cerámica
-              </p>
-            </div>
-          </div>
-          <!--tercera fila-->
-          <div class="bg-naranja overflow-hidden rounded-md h-60">
-            <img
-              src="./assets/images/mujeres en la musica.jpg"
-              class="w-full h-24 object-cover"
-            />
-            <div class="p-2">
-              <p class="text-white">05-06-2026</p>
-              <p class="text-white">Mujeres en la música</p>
-              <p class="text-white mt-1">
-                Exposicion que reúne imágenes y materiales de artistas como
-                Rocio Jurado o Aitana
-              </p>
-            </div>
-          </div>
-          <div class="bg-gris overflow-hidden rounded-md h-60">
-            <div class="flex flex-col justify-center items-center">
-              <img
-                src="./assets/images/fiesta del bollo.jpg"
-                class="w-full h-24 object-cover"
-              />
-            </div>
-            <div class="p-2">
-              <p class="text-white">06-04-2026</p>
-              <p class="text-white">Fiesta de El Bollo. Avilés</p>
-              <p class="text-white mt-1">
-                Celebración primaveral con desfiles, comida en la calle y
-                ambiente festivo que cierra la Semana Santa.
-              </p>
-            </div>
-          </div>
-          <div class="bg-azul overflow-hidden rounded-md h-60">
-            <img
-              src="./assets/images/the silence.jpg"
-              class="w-full h-24 object-cover"
-            />
-            <div class="p-2">
-              <p class="text-white">02-10-2026</p>
-              <p class="text-white">The Silence</p>
-              <p class="text-white mt-1">
-                Para su obra autoficticoa el dramaturgo y director Flak Richter
-                se centra en su propia historia familiar
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
     </main>
     <footer class="bg-rosaclaro text-black">
       <div class="flex flex-col items-end gap-2">
@@ -361,5 +242,7 @@
         <p class="text-black text-sm">© Copyright 2026 HAPINNESS CO</p>
       </div>
     </footer>
-  </body>
+
+    
+</body>
 </html>
