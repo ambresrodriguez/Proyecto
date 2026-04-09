@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HAPPINESS&Co</title>
-    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="../assets/css/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -24,54 +24,43 @@
       <nav
         class="bg-rosa flex items-left py-4 gap-30 fixed top-0 w-full y-20 z-100"
       >
-        <a href="index.html" class="flex flex-col justify-center">
+        <a href="../index.html" class="flex flex-col justify-center">
           <img
             class="logo_2 h-8"
-            src="./assets/images/logo/happines-and-co-propuesta-02.png"
+            src="../assets/images/logo/happines-and-co-propuesta-02.png"
           />
         </a>
-        <a href="index.html" class="text-white text-lg hover:text-purple-300"
+        <a href="../index.html" class="text-white text-lg hover:text-purple-300"
           >Inicio</a
         >
         <a
-          href="proximosEventos.html"
+          href="../proximosEventos.html"
           class="text-white text-lg hover:text-purple-300"
           >Proximos Eventos</a
         >
         <a
-          href="historial.html"
+          href="../historial.html"
           class="text-white text-lg hover:text-purple-300"
           >Historial de eventos</a
         >
         <a
-          href="sobrenosotros.html"
+          href="../sobrenosotros.html"
           class="text-white text-lg hover:text-purple-300"
           >Sobre nosotros</a
         >
-        <a href="fuentes.html" class="text-white text-lg hover:text-purple-300"
+        <a
+          href="../fuentes.html"
+          class="text-white text-lg hover:text-purple-300"
           >Fuentes</a
         >
-        <a href="contacto.html" class="text-white text-lg hover:text-purple-300"
+        <a
+          href="../contacto.html"
+          class="text-white text-lg hover:text-purple-300"
           >Contacto</a
         >
       </nav>
     </header>
-    <main>
-      <!--foto de encabezado-->
-      <div class="relative bg-black h-64 overflow-hidden text-white mt-15">
-        <img
-          src="./assets/images/eventos/proximoseventos/fraude/fraude-1973-pelicula-imagen10.jpg"
-          class="w-full h-full object-cover opacity-50"
-        />
-
-        <p class="absolute top-0 right-0 text-sm text-rigth text-2xl">
-          20 de Septiembre de 2026
-        </p>
-        <h1 class="absolute bottom-0 left-0 font-bold text-3xl">Fraude</h1>
-        <!-- el font bold es texto en negrita-->
-      </div>
-
-      <!--contenido general/principal-->
+    <main class="mt-16">
       <div class="bg-white h-fit w-full flex flex-row">
         <!--barra lateral |  sidebar-->
 
@@ -79,16 +68,16 @@
         <!--recomendados-->
         <!--rounded-full para redondear los bordes|| mb es margin bottom || inline-block ocupa lo que necesite dejandote ponerle ancho,alto,etc...-->
         <div
-          class="bg-rosaclaro w-140 text-white text-xs font-bold px-3 py-1 rounded-md inline-block"
+          class="bg-rosaclaro w-80 text-white text-xs font-bold px-3 rounded-md inline-block"
         >
           RECOMENDADOS
           <!--primer evento recomendado-->
-          <a href="./eventos/silviaperezcruz.html">
+          <a href="../eventos/silviaperezcruz.html">
             <div
               class="bg-rosa rounded-lg p-2 h-34 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/proximoseventos/silviaperezcruz/silvia-peres-cruz-foto.jpg"
+                src="../assets/images/eventos/proximoseventos/silviaperezcruz/silvia-peres-cruz-foto.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -103,12 +92,12 @@
             </div>
           </a>
           <!--segundo evento recomendado-->
-          <a href="./eventos/fraude.html">
+          <a href="../eventos/fraude.html">
             <div
               class="bg-azul rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/proximoseventos/fraude/fraude-1973-pelicula-imagen10.jpg"
+                src="../assets/images/eventos/proximoseventos/fraude/fraude-1973-pelicula-imagen10.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -122,12 +111,12 @@
             </div>
           </a>
           <!--tercer evento recomendado-->
-          <a href="./eventos/alvarezduarte.html">
+          <a href="../eventos/alvarezduarte.html">
             <div
               class="bg-naranja rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/proximoseventos/alvarezduarte/alvarez-duarte.jpg"
+                src="../assets/images/eventos/proximoseventos/alvarezduarte/alvarez-duarte.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -143,12 +132,12 @@
             </div>
           </a>
           <!--cuarto evento recomendado-->
-          <a href="./eventos/constelaciones.html">
+          <a href="../eventos/constelaciones.html">
             <div
               class="bg-azul rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/proximoseventos/constelaciones/constelaciones-foto.jpg"
+                src="../assets/images/eventos/proximoseventos/constelaciones/constelaciones-foto.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -162,12 +151,12 @@
             </div>
           </a>
           <!--quinto evento recomendado-->
-          <a href="./eventos/fiestadelbollo">
+          <a href="../eventos/fiestadelbollo">
             <div
               class="bg-gris rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/historial/fiesta del bollo/fiesta del bollo.jpg"
+                src="../assets/images/eventos/historial/fiesta del bollo/fiesta del bollo.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -184,180 +173,47 @@
           </a>
         </div>
 
-        <!--Eventos-->
-        <div class="grid grid-cols-3 gap-8 p-4">
-          <!--primera fila-->
-          <a href="./eventos/silviaperezcruz.html">
-            <div
-              class="bg-rosa overflow-hidden rounded-md h-60 shadow-xl hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/silviaperezcruz/silvia-peres-cruz-foto.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">25-06-2026</p>
-                <p class="text-white">Silvia Perez Cruz</p>
-                <p class="text-white mt-1">
-                  Nuevas y originales canciones para compartir con sonidos
-                  familiares y nuevos horizontes
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/alvarezduarte.html">
-            <div
-              class="bg-naranja overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/alvarezduarte/alvarez-duarte.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">21-07-2026</p>
-                <p class="text-white">Luís Álvarez Duarte, escultor</p>
-                <p class="text-white mt-1">
-                  Un recorrido a través de la obras del imaginero y escultor
-                  andaluz
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/fraude.html">
-            <div
-              class="bg-azul overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/fraude/fraude-1973-pelicula-imagen10.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">20-09-2026</p>
-                <p class="text-white">Fraude</p>
-                <p class="text-white mt-1">
-                  Pelicula de 1973 sobre un falsificador de arte temido y
-                  admirado por museos
-                </p>
-              </div>
-            </div>
-          </a>
-          <!--segunda fila-->
-          <a href="./eventos/constelaciones.html">
-            <div
-              class="bg-azul overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/constelaciones/constelaciones-foto.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">15-06-2026</p>
-                <p class="text-white">Constelaciones</p>
-                <p class="text-white mt-1">
-                  Una obra de teatro contemporánea que explora la relacion
-                  emntre una fìsica cuántica y un apicultor
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/mamamia.html">
-            <div
-              class="bg-rosa overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <div class="flex flex-col justify-center items-center">
-                <img
-                  src="./assets/images/eventos/historial/mammamia/mamamia-musical.jfif"
-                  class="w-full h-24 object-cover"
-                />
-              </div>
-              <div class="p-2">
-                <p class="text-white">24-03-2026</p>
-                <p class="text-white">Mamma Mía! El Musical. Gijón</p>
-                <p class="text-white mt-1">
-                  comedia romántica con canciones de ABBA sobre una boda y un
-                  misterio familiar.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/cristobalaviles.html">
-            <div
-              class="bg-naranja overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/cristobalaviles/Exposicion-CIP-Esculturas-Cristobal-Aviles-24-uai-1500x750.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">15-08-2026</p>
-                <p class="text-white">Cristóbal Avilés</p>
-                <p class="text-white mt-1">
-                  Una exposición dedicada al creador Cristóbal Aviles a traves
-                  de obras realizadas con hierro, piedra y cerámica
-                </p>
-              </div>
-            </div>
-          </a>
-          <!--tercera fila-->
-          <a href="./eventos/mujeresenlamusica.html">
-            <div
-              class="bg-naranja overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/mujeresenlamusica/mujeres en la musica.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">05-06-2026</p>
-                <p class="text-white">Mujeres en la música</p>
-                <p class="text-white mt-1">
-                  Exposicion que reúne imágenes y materiales de artistas como
-                  Rocio Jurado o Aitana
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/fiestadelbollo.html">
-            <div
-              class="bg-gris overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <div class="flex flex-col justify-center items-center">
-                <img
-                  src="./assets/images/eventos/historial/fiesta del bollo/fiesta del bollo.jpg"
-                  class="w-full h-24 object-cover"
-                />
-              </div>
-              <div class="p-2">
-                <p class="text-white">06-04-2026</p>
-                <p class="text-white">Fiesta de El Bollo. Avilés</p>
-                <p class="text-white mt-1">
-                  Celebración primaveral con desfiles, comida en la calle y
-                  ambiente festivo que cierra la Semana Santa.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/thesilence.html">
-            <div
-              class="bg-azul overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/thesilence/the silence.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">02-10-2026</p>
-                <p class="text-white">The Silence</p>
-                <p class="text-white mt-1">
-                  Para su obra autoficticoa el dramaturgo y director Flak
-                  Richter se centra en su propia historia familiar
-                </p>
-              </div>
-            </div>
-          </a>
+        <div>
+          <img
+            src="../assets/images/eventos/proximoseventos/constelaciones/constelaciones-foto.jpg"
+            alt="Constelaciones"
+            class="w-80 h-80 object-cover rounded-xl border-3 border-rosa m-6"
+          />
+        </div>
+        <div class="flex-1 space-y-4">
+          <h1 class="text-5xl text-gris mb-6">Constelaciones</h1>
+          <p>15-06-2026</p>
+          <p my-4>
+            Constelaciones es una obra de teatro contemporánea que explora la
+            relación entre ELLA, una física cuántica, y ÉL, un apicultor. Su
+            encuentro parece casual, pero se plantea la historia a través de la
+            teoría de los universos paralelos y del concepto del multiverso,
+            mostrando cómo una misma relación puede desarrollarse de formas
+            radicalmente distintas dependiendo de pequeñas elecciones,
+            circunstancias o coincidencias.
+          </p>
+          <p my-4>
+            La obra comienza con una escena aparentemente sencilla: ELLA y ÉL se
+            conocen en una barbacoa. A partir de ahí, se despliegan múltiples
+            variaciones de esa situación, en las que los mismos diálogos se
+            repiten con matices distintos, generando escenarios donde la
+            relación prospera, fracasa, nunca llega a ocurrir, o termina
+            abruptamente. Cada versión es como un reflejo alternativo, una
+            posibilidad en ese “mosaico” de universos que coexisten.
+          </p>
+          <p>
+            A medida que avanza la pieza, los saltos entre universos se vuelven
+            más significativos: vemos a la pareja enfrentarse a la convivencia,
+            la infidelidad, la enfermedad y la muerte. Uno de los núcleos
+            dramáticos es el diagnóstico de un cáncer cerebral en ELLA, que
+            introduce un nivel profundo de vulnerabilidad y decisión. La obra no
+            ofrece un único desenlace, sino que muestra la fragilidad y belleza
+            de la vida a través de la coexistencia de posibilidades.
+          </p>
         </div>
       </div>
     </main>
+
     <footer class="bg-rosaclaro text-black">
       <div class="flex flex-col items-end gap-2">
         <div class="flex flex-row gap-3">
