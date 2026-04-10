@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link rel="stylesheet" href="./assets/css/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,11 +17,13 @@
         },
       };
     </script>
-</head>
-<body class="bg-white text-black">
+  </head>
+  <body class="bg-white text-black">
     <header>
       <!--object contain ajusta la imagen||object-cover la recorta-->
-      <nav class="bg-rosa flex items-left py-4 gap-30 fixed top-0 w-full y-20 z-100">
+      <nav
+        class="bg-rosa flex items-left py-4 gap-30 fixed top-0 w-full y-20 z-100"
+      >
         <a href="index.html" class="flex flex-col justify-center">
           <img
             class="logo_2 h-8"
@@ -31,7 +33,9 @@
         <a href="index.html" class="text-white text-lg hover:text-purple-300"
           >Inicio</a
         >
-        <a href="proximosEventos.html" class="text-white text-lg hover:text-purple-300"
+        <a
+          href="proximosEventos.html"
+          class="text-white text-lg hover:text-purple-300"
           >Proximos Eventos</a
         >
         <a
@@ -61,20 +65,62 @@
           class="w-55 h-55 justify-center object-cover opacity-50"
         />
       </div>
-      <div class="flex items-center justify-center my-6">
+      <div class="flex items-center justify-center my-4">
         <p class="text-rosa text-xl mx-auto">Privacy Policy</p>
       </div>
-      <div class="flex items-center justify-center my-6">
+      <div class="flex items-center justify-center my-4">
         <p class="text-black mx-auto">© Copyright 2026 HAPINNESS CO</p>
       </div>
-      <div class="flex items-center justify-center my-6">
+      <div class="flex items-center justify-center my-4">
         <p class="text-rosa text-2xl mx-auto">Contact for Support</p>
       </div>
-      <div class="flex items-center justify-center my-6">
+      <div class="flex items-center justify-center my-4">
         <p class="text-rosa text-2xl mx-auto">happinessco@happinessco.org</p>
       </div>
-      <div class="flex items-center justify-center my-6 mb-44">
-        <p class="text-rosa text-2xl mx-auto">Calle Marqués de San Esteban,14 33206 Gijón, Asturias</p>
+      <div class="flex items-center justify-center my-4 mb-44">
+        <p class="text-rosa text-2xl mx-auto">
+          Calle Marqués de San Esteban,14 33206 Gijón, Asturias
+        </p>
+      </div>
+
+      <!--menu de contacto-->
+      <div class="bg-white shadow-xl rounded-3xl p-4 w-full">
+        <h2 class="text-2xl font-bold mb-6">Contacto</h2>
+
+        <form class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <label class="block">Nombre</label>
+              <input type="text" class="w-full mt-1 p-2 rounded-lg border-2 border-pink-400" required />
+            </div>
+            <div>
+              <label class="block">Apellidos</label>
+              <input type="text" class="w-full mt-1 p-2 rounded-lg border-2 border-pink-400" required />
+            </div>
+
+            <div>
+              <label class="block">Teléfono</label>
+              <input type="text" class="w-full mt-1 p-2 rounded-lg border-2 border-pink-400" required />
+            </div>
+          </div>
+          <div>
+            <label class="block">Comentario</label>
+            <textarea
+              type="text"
+              class="w-full mt-1 p-2 rounded-lg border-2 border-pink-400"
+              required
+            ></textarea>
+          </div>
+
+          <div flex items-start>
+            <input type="checkbox" id="suscribe" class="mt-1 mr-2" />
+            <label for="suscribe" class="text-sm">¿Desea suscribirse?</label>
+          </div>
+
+          <button type="submit" class="w-full py-2 rounded-lg hover-bg-rosa">
+            Enviar
+          </button>
+        </form>
       </div>
     </main>
     <footer class="bg-rosaclaro text-black">
@@ -139,6 +185,5 @@
         <p class="text-black text-sm">© Copyright 2026 HAPINNESS CO</p>
       </div>
     </footer>
-    
-</body>
+  </body>
 </html>

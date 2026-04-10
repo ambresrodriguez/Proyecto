@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proximos eventos</title>
-    <link rel="stylesheet" href="./assets/css/output.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAPPINESS&Co</title>
+    <link rel="stylesheet" href="../assets/css/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -17,54 +17,67 @@
         },
       };
     </script>
-</head>
-<body class="bg-white text-black">
+  </head>
+  <body class="bg-white text-black">
     <header>
-        <nav class="bg-rosa flex items-left py-4 gap-30 fixed top-0 w-full y-20 z-100">
-        <a href="index.html" class="flex flex-col justify-center">
+      <!--object contain ajusta la imagen||object-cover la recorta-->
+      <nav
+        class="bg-rosa flex items-left py-4 gap-30 fixed top-0 w-full y-20 z-100"
+      >
+        <a href="../index.html" class="flex flex-col justify-center">
           <img
             class="logo_2 h-8"
-            src="./assets/images/logo/happines-and-co-propuesta-02.png"
+            src="../assets/images/logo/happines-and-co-propuesta-02.png"
           />
         </a>
-        <a href="index.html" class="text-white text-lg hover:text-purple-300 "
+        <a href="../index.html" class="text-white text-lg hover:text-purple-300"
           >Inicio</a
         >
-        <a href="proximosEventos.html" class="text-white text-lg hover:text-purple-300"
-          >Proximos eventos</a
+        <a
+          href="../proximosEventos.html"
+          class="text-white text-lg hover:text-purple-300"
+          >Proximos Eventos</a
         >
         <a
-          href="historial.html"
+          href="../historial.html"
           class="text-white text-lg hover:text-purple-300"
           >Historial de eventos</a
         >
         <a
-          href="sobrenosotros.html"
+          href="../sobrenosotros.html"
           class="text-white text-lg hover:text-purple-300"
           >Sobre nosotros</a
         >
-        <a href="fuentes.html" class="text-white text-lg hover:text-purple-300"
+        <a
+          href="../fuentes.html"
+          class="text-white text-lg hover:text-purple-300"
           >Fuentes</a
         >
-        <a href="contacto.html" class="text-white text-lg hover:text-purple-300"
+        <a
+          href="../contacto.html"
+          class="text-white text-lg hover:text-purple-300"
           >Contacto</a
         >
       </nav>
     </header>
     <main class="mt-16">
-        <div class="bg-white h-fit w-full flex flex-row">
+      <div class="bg-white h-fit w-full flex flex-row">
         <!--barra lateral |  sidebar-->
+
+        <!--shrink hace que no se encoja-->
+        <!--recomendados-->
+        <!--rounded-full para redondear los bordes|| mb es margin bottom || inline-block ocupa lo que necesite dejandote ponerle ancho,alto,etc...-->
         <div
-          class="bg-rosaclaro w-140 text-white text-xs font-bold px-3  rounded-md inline-block "
+          class="bg-rosaclaro w-80 text-white text-xs font-bold px-3 rounded-md inline-block"
         >
           RECOMENDADOS
           <!--primer evento recomendado-->
-          <a href="./eventos/silviaperezcruz.html">
+          <a href="../eventos/silviaperezcruz.html">
             <div
               class="bg-rosa rounded-lg p-2 h-34 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/proximoseventos/silviaperezcruz/silvia-peres-cruz-foto.jpg"
+                src="../assets/images/eventos/proximoseventos/silviaperezcruz/silvia-peres-cruz-foto.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -79,12 +92,12 @@
             </div>
           </a>
           <!--segundo evento recomendado-->
-          <a href="./eventos/fraude.html">
+          <a href="../eventos/fraude.html">
             <div
               class="bg-azul rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/proximoseventos/fraude/fraude-1973-pelicula-imagen10.jpg"
+                src="../assets/images/eventos/proximoseventos/fraude/fraude-1973-pelicula-imagen10.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -98,12 +111,12 @@
             </div>
           </a>
           <!--tercer evento recomendado-->
-          <a href="./eventos/alvarezduarte.html">
+          <a href="../eventos/alvarezduarte.html">
             <div
               class="bg-naranja rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/proximoseventos/alvarezduarte/alvarez-duarte.jpg"
+                src="../assets/images/eventos/proximoseventos/alvarezduarte/alvarez-duarte.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -119,12 +132,12 @@
             </div>
           </a>
           <!--cuarto evento recomendado-->
-          <a href="./eventos/constelaciones.html">
+          <a href="../eventos/constelaciones.html">
             <div
               class="bg-azul rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/proximoseventos/constelaciones/constelaciones-foto.jpg"
+                src="../assets/images/eventos/proximoseventos/constelaciones/constelaciones-foto.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -138,12 +151,12 @@
             </div>
           </a>
           <!--quinto evento recomendado-->
-          <a href="./eventos/fiestadelbollo.html">
+          <a href="../eventos/fiestadelbollo.html">
             <div
               class="bg-gris rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
             >
               <img
-                src="./assets/images/eventos/historial/fiesta del bollo/fiesta del bollo.jpg"
+                src="../assets/images/eventos/historial/fiesta del bollo/fiesta del bollo.jpg"
                 class="w-16 h-16 object-cover rounded"
               />
               <div>
@@ -158,142 +171,39 @@
               </div>
             </div>
           </a>
+        </div>
 
-          </div>
-          <!--Eventos-->
-        <div class="grid grid-cols-3 gap-8 p-4">
-          
-          <!--primera fila-->
-          <a href="./eventos/silviaperezcruz.html">
-            <div
-              class="bg-rosa overflow-hidden rounded-md h-60 shadow-xl hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/silviaperezcruz/silvia-peres-cruz-foto.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">25-06-2026</p>
-                <p class="text-white">Silvia Perez Cruz</p>
-                <p class="text-white mt-1">
-                  Nuevas y originales canciones para compartir con sonidos
-                  familiares y nuevos horizontes
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/alvarezduarte.html">
-            <div
-              class="bg-naranja overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/alvarezduarte/alvarez-duarte.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">21-07-2026</p>
-                <p class="text-white">Luís Álvarez Duarte, escultor</p>
-                <p class="text-white mt-1">
-                  Un recorrido a través de la obras del imaginero y escultor
-                  andaluz
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/fraude.html">
-            <div
-              class="bg-azul overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/fraude/fraude-1973-pelicula-imagen10.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">20-09-2026</p>
-                <p class="text-white">Fraude</p>
-                <p class="text-white mt-1">
-                  Pelicula de 1973 sobre un falsificador de arte temido y
-                  admirado por museos
-                </p>
-              </div>
-            </div>
-          </a>
-          <!--segunda fila-->
-          <a href="./eventos/constelaciones.html">
-            <div
-              class="bg-azul overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/constelaciones/constelaciones-foto.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">15-06-2026</p>
-                <p class="text-white">Constelaciones</p>
-                <p class="text-white mt-1">
-                  Una obra de teatro contemporánea que explora la relacion
-                  emntre una fìsica cuántica y un apicultor
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/mujeresenlamusica.html">
-            <div
-              class="bg-naranja overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/mujeresenlamusica/mujeres en la musica.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">05-06-2026</p>
-                <p class="text-white">Mujeres en la música</p>
-                <p class="text-white mt-1">
-                  Exposicion que reúne imágenes y materiales de artistas como
-                  Rocio Jurado o Aitana
-                </p>
-              </div>
-            </div>
-          </a>
-          
-          <a href="./eventos/thesilence.html">
-            <div
-              class="bg-azul overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/thesilence/the silence.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">02-10-2026</p>
-                <p class="text-white">The Silence</p>
-                <p class="text-white mt-1">
-                  Para su obra autoficticoa el dramaturgo y director Flak
-                  Richter se centra en su propia historia familiar
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="./eventos/cristobalaviles.html">
-            <div
-              class="bg-naranja overflow-hidden rounded-md h-60 hover:bg-black/50"
-            >
-              <img
-                src="./assets/images/eventos/proximoseventos/cristobalaviles/Exposicion-CIP-Esculturas-Cristobal-Aviles-24-uai-1500x750.jpg"
-                class="w-full h-24 object-cover"
-              />
-              <div class="p-2">
-                <p class="text-white">15-08-2026</p>
-                <p class="text-white">Cristóbal Avilés</p>
-                <p class="text-white mt-1">
-                  Una exposición dedicada al creador Cristóbal Aviles a traves
-                  de obras realizadas con hierro, piedra y cerámica
-                </p>
-              </div>
-            </div>
-          </a>
-          
+        <div>
+          <img
+            src="../assets/images/eventos/historial/partidooviedoespanyol/oviedoespanyol.png"
+            alt="Oviedo-Espanyol"
+            class="w-80 h-80 object-cover rounded-xl border-3 border-rosa m-6"
+          />
+        </div>
+        <div class="flex-1 space-y-4">
+          <h1 class="text-5xl text-gris mb-6">Partido Oviedo-Espanyol</h1>
+          <p>01-01-2026</p>
+          <p my-4>
+            Victoria del Espanyol en el principado de Asturias tras derrotar al
+            Oviedo por 0-2, gracias a los goles de Kike García (VAR mediante) y
+            Pere Milla. El resultado hace justicia a la superioridad del
+            Espanyol en el partido, frente a un Oviedo al que mantuvo vivio
+            Aarón con hasta 4 buenas intervenciones, decisivas para que se
+            llegara con empate a cero al descanso. </br>Tras el gol inicial de Kike
+            García, tras consulta con el VAR en una jugada complicada de ver y
+            arbirtrar, el Espanyol encontró la sentencia en una contra bien
+            rematada por Pere Milla en el segundo palo. El Oviedo tuvo su mejor
+            oportunidad con el tiro al palo de Reina justo al comienzo de la
+            segunda parte con 0-0, pero sigue pagando su alarmante falta de
+            pegada arriba. Que un día más, su mejor jugador haya sido su portero
+            no habla muy bien de la solidez ovetense. Tiene trabajo por delante
+            Luis Carrión.
+          </p>
+          <p>Resultado 0 : 2</p>
+        </div>
+      </div>
     </main>
+
     <footer class="bg-rosaclaro text-black">
       <div class="flex flex-col items-end gap-2">
         <div class="flex flex-row gap-3">
@@ -356,6 +266,5 @@
         <p class="text-black text-sm">© Copyright 2026 HAPINNESS CO</p>
       </div>
     </footer>
-    
-</body>
+  </body>
 </html>
