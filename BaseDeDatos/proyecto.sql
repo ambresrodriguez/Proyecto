@@ -51,6 +51,9 @@ insert into eventos values(6,'01-01-2026','oviedo-español','estadio municipal ca
 insert into eventos values(7,'12-01-2026','espectaculo drones','playa de San Lorenzo, gijon','Un evento que llenará nuestros días de asombro y emoción. Durante estos días inolvidables, nuestro cielo se convertirá en el escenario de un espectáculo impresionante, con actividades para toda la familia.');
 insert into eventos values(8,'24-01-2026','monoloco fest','pabellón de la Magdalena, aviles','Un festival de musica urbana que se celebra en diferentes ciudades de españa');
 insert into eventos values(9,'25-06-2026','exposicion silvia cruz','Aviles','Nueva y originales canciones para compartir, con sonidos familiares y nuevos horizontes');
+insert into eventos values(10,'21-07-2026','exposicion alvarez duarte','Gijon','Un recorrido a través de la obras del imaginero y escultor andaluz');
+insert into eventos values(11,'20-09-2026','fraude','Gijón','Pelicula de 1973 sobre un falsificador de arte temido y admirado por museos');
+insert into eventos values(12,'15-08-2026','exposicion cristobal aviles','Gijón','Una exposición dedicada al creador Cristóbal Aviles a traves de obras realizadas con hierro, piedra y cerámica');
 
 insert into galerias values(1,'imagenes teatro Jovellanos',1);
 insert into galerias values(2,'imagenes teatro Jovellanos',2);

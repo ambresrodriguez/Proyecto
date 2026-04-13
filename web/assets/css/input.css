@@ -14,6 +14,9 @@
 *{
     font-family:'Comic Neue',
 }
+body{
+    font-family: 'Comic Neue';
+}
 header {
     background-color: #ba007b;
     font-family: 'Archristy', 'Asenine', 'Asenst', 'Asent', 'Asenw';

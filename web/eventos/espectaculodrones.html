@@ -17,12 +17,18 @@
         },
       };
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-white text-black">
+
+  <body class="bg-white text-black grid grid-rows-[auto_1fr_auto] min-h-screen">
     <header>
-      <!--object contain ajusta la imagen||object-cover la recorta-->
       <nav
-        class="bg-rosa flex items-left py-4 gap-30 fixed top-0 w-full y-20 z-100"
+        class="bg-rosa flex items-center py-4 gap-30 fixed top-0 w-full z-100 px-4"
       >
         <a href="../index.html" class="flex flex-col justify-center">
           <img
@@ -60,127 +66,120 @@
         >
       </nav>
     </header>
-    <main class="mt-16">
-      <div class="bg-white h-fit w-full flex flex-row">
-        <!--barra lateral |  sidebar-->
+    <main class="mt-16 grid grid-cols-[20%_1fr]">
+      <div class="bg-rosaclaro text-white text-xs font-bold px-3 rounded-md">
+        RECOMENDADOS
 
-        <!--shrink hace que no se encoja-->
-        <!--recomendados-->
-        <!--rounded-full para redondear los bordes|| mb es margin bottom || inline-block ocupa lo que necesite dejandote ponerle ancho,alto,etc...-->
-        <div
-          class="bg-rosaclaro w-80 text-white text-xs font-bold px-3 rounded-md inline-block"
-        >
-          RECOMENDADOS
-          <!--primer evento recomendado-->
-          <a href="../eventos/silviaperezcruz.html">
-            <div
-              class="bg-rosa rounded-lg p-2 h-34 mb-3 flex gap-2 hover:bg-black/50"
-            >
-              <img
-                src="../assets/images/eventos/proximoseventos/silviaperezcruz/silvia-peres-cruz-foto.jpg"
-                class="w-16 h-16 object-cover rounded"
-              />
-              <div>
-                <p class="text-white text-xs">25-06-2026</p>
-                <p class="text-white text-xs font-bold">Silvia Perez Cruz</p>
-                <!--mt es margin top-->
-                <p class="text-white text-xs mt-1">
-                  Nueva y originales canciones para compartir, con sonidos
-                  familiares y nuevos horizontes
-                </p>
-              </div>
+        <a href="../eventos/silviaperezcruz.html">
+          <div
+            class="bg-rosa rounded-lg p-2 h-34 mb-3 flex gap-2 hover:bg-black/50"
+          >
+            <img
+              src="../assets/images/eventos/proximoseventos/silviaperezcruz/silvia-peres-cruz-foto.jpg"
+              class="w-16 h-16 object-cover rounded"
+            />
+            <div>
+              <p class="text-white text-xs">25-06-2026</p>
+              <p class="text-white text-xs font-bold">Silvia Perez Cruz</p>
+              <p class="text-white text-xs mt-1">
+                Nueva y originales canciones para compartir, con sonidos
+                familiares y nuevos horizontes
+              </p>
             </div>
-          </a>
-          <!--segundo evento recomendado-->
-          <a href="../eventos/fraude.html">
-            <div
-              class="bg-azul rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
-            >
-              <img
-                src="../assets/images/eventos/proximoseventos/fraude/fraude-1973-pelicula-imagen10.jpg"
-                class="w-16 h-16 object-cover rounded"
-              />
-              <div>
-                <p class="text-white text-xs">20-09-2026</p>
-                <p class="text-white text-xs font-bold">Fraude</p>
-                <p class="text-white text-xs mt-1">
-                  Pelicula de 1973 sobre un falsificador de arte temido y
-                  admirado por museos
-                </p>
-              </div>
-            </div>
-          </a>
-          <!--tercer evento recomendado-->
-          <a href="../eventos/alvarezduarte.html">
-            <div
-              class="bg-naranja rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
-            >
-              <img
-                src="../assets/images/eventos/proximoseventos/alvarezduarte/alvarez-duarte.jpg"
-                class="w-16 h-16 object-cover rounded"
-              />
-              <div>
-                <p class="text-white text-xs">21-07-2026</p>
-                <p class="text-white text-xs font-bold">
-                  Luis Alvarez Duarte, escultor
-                </p>
-                <p class="text-white text-xs mt-1">
-                  Un recorrido a través de la obra sacra y profana del imaginero
-                  y escultor andaluz
-                </p>
-              </div>
-            </div>
-          </a>
-          <!--cuarto evento recomendado-->
-          <a href="../eventos/constelaciones.html">
-            <div
-              class="bg-azul rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
-            >
-              <img
-                src="../assets/images/eventos/proximoseventos/constelaciones/constelaciones-foto.jpg"
-                class="w-16 h-16 object-cover rounded"
-              />
-              <div>
-                <p class="text-white text-xs">15-06-2026</p>
-                <p class="text-white text-xs font-bold">Constelaciones</p>
-                <p class="text-white text-xs mt-1">
-                  Una obra de teatro contemporánea que explora la relacion
-                  emntre una fìsica cuántica y un apicultor
-                </p>
-              </div>
-            </div>
-          </a>
-          <!--quinto evento recomendado-->
-          <a href="../eventos/fiestadelbollo.html">
-            <div
-              class="bg-gris rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
-            >
-              <img
-                src="../assets/images/eventos/historial/fiesta del bollo/fiesta del bollo.jpg"
-                class="w-16 h-16 object-cover rounded"
-              />
-              <div>
-                <p class="text-white text-xs">06-04-2026</p>
-                <p class="text-white text-xs font-bold">
-                  Fiesta de El Bollo. Avilés
-                </p>
-                <p class="text-white text-xs mt-1">
-                  Celebración primaveral con desfiles, comida en la calle y
-                  ambiente festivo que cierra la Semana Santa.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
+          </div>
+        </a>
 
+        <a href="../eventos/fraude.html">
+          <div
+            class="bg-azul rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
+          >
+            <img
+              src="../assets/images/eventos/proximoseventos/fraude/fraude-1973-pelicula-imagen10.jpg"
+              class="w-16 h-16 object-cover rounded"
+            />
+            <div>
+              <p class="text-white text-xs">20-09-2026</p>
+              <p class="text-white text-xs font-bold">Fraude</p>
+              <p class="text-white text-xs mt-1">
+                Pelicula de 1973 sobre un falsificador de arte temido y admirado
+                por museos
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="../eventos/alvarezduarte.html">
+          <div
+            class="bg-naranja rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
+          >
+            <img
+              src="../assets/images/eventos/proximoseventos/alvarezduarte/alvarez-duarte.jpg"
+              class="w-16 h-16 object-cover rounded"
+            />
+            <div>
+              <p class="text-white text-xs">21-07-2026</p>
+              <p class="text-white text-xs font-bold">
+                Luis Alvarez Duarte, escultor
+              </p>
+              <p class="text-white text-xs mt-1">
+                Un recorrido a través de la obra sacra y profana del imaginero y
+                escultor andaluz
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="../eventos/constelaciones.html">
+          <div
+            class="bg-azul rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
+          >
+            <img
+              src="../assets/images/eventos/proximoseventos/constelaciones/constelaciones-foto.jpg"
+              class="w-16 h-16 object-cover rounded"
+            />
+            <div>
+              <p class="text-white text-xs">15-06-2026</p>
+              <p class="text-white text-xs font-bold">Constelaciones</p>
+              <p class="text-white text-xs mt-1">
+                Una obra de teatro contemporánea que explora la relacion emntre
+                una fìsica cuántica y un apicultor
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="../eventos/fiestadelbollo.html">
+          <div
+            class="bg-gris rounded-lg p-2 h-30 mb-3 flex gap-2 hover:bg-black/50"
+          >
+            <img
+              src="../assets/images/eventos/historial/fiesta del bollo/fiesta del bollo.jpg"
+              class="w-16 h-16 object-cover rounded"
+            />
+            <div>
+              <p class="text-white text-xs">06-04-2026</p>
+              <p class="text-white text-xs font-bold">
+                Fiesta de El Bollo. Avilés
+              </p>
+              <p class="text-white text-xs mt-1">
+                Celebración primaveral con desfiles, comida en la calle y
+                ambiente festivo que cierra la Semana Santa.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="flex flex-col">
+        <div class="flex gap-4">
         <div>
           <img
             src="../assets/images/eventos/historial/espectaculodrones/espectaculodrones.jpg"
-            alt="Espectaculo drones"
+            alt="EspectaculoDrones"
             class="w-80 h-80 object-cover rounded-xl border-3 border-rosa m-6"
           />
         </div>
-        <div class="flex-1 space-y-4">
+       <div class="display-block flex-1 space-y-4 w-full mb-8 ">
           <h1 class="text-5xl text-gris mb-6">Espectaculo de drones</h1>
           <p>12-01-2026</p>
           <p class="font-bold">¡Ya llega la esperada Fiesta del Cielo!</p>
@@ -200,9 +199,28 @@
             dispositivos modernos realizarán maniobras sorprendentes y
             coreografías aéreas sincronizadas.
           </p>
-          
         </div>
       </div>
+        <div  class="">
+          <h1 class="font-bold text-xl text-gris mx-12 my-10">Galeria de imagenes</h1>
+          <div class="flex ">
+            <img
+              src="../assets/images/eventos/historial/espectaculodrones/imggal1.jpg"
+              alt="EspectaculoDrones"
+              class="w-80 h-80 object-cover rounded-xl border-3 border-rosa m-6"
+            />
+            <img
+              src="../assets/images/eventos/historial/espectaculodrones/imggal2.jpg"
+              alt="EspectaculoDrones"
+              class="w-80 h-80 object-cover rounded-xl border-3 border-rosa m-6"
+            />
+            <img
+             src="../assets/images/eventos/historial/espectaculodrones/imggal3.jfif"
+             alt="EspectaculoDrones"
+             class="w-80 h-80 object-cover rounded-xl border-3 border-rosa m-6"
+            />
+          </div>
+        </div>
     </main>
 
     <footer class="bg-rosaclaro text-black">
@@ -221,7 +239,6 @@
               />
             </svg>
           </a>
-
           <a href="#">
             <svg
               class="w-5 h-5"
@@ -235,7 +252,6 @@
               />
             </svg>
           </a>
-
           <a href="#">
             <svg
               class="w-5 h-5"
@@ -249,7 +265,6 @@
               />
             </svg>
           </a>
-
           <a href="#">
             <svg
               class="w-5 h-5"

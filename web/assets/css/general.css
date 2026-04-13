@@ -8,6 +8,10 @@ header {
     height: 72;
     color: white;
 }
+
+body{
+    font-family: 'Comic Neue';
+}
 nav {
     display: flex;
 
