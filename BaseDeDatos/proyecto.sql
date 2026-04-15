@@ -89,6 +89,8 @@ from galerias
 join eventos on id_even = id_gal
 where fecha < ('28-02-2026');
 
+select * from galerias_antiguas;
+
 create view evento_favorito as
 select eventos.titulo
 from eventos

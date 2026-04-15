@@ -85,7 +85,7 @@ public class Eventos {
 
     @Override
     public String toString() {
-        return "evento [id=" + id + ", titulo=" + titulo + ", fecha=" + fecha + ", galerias=" + coleccion_galerias.size() + "]";
+        return "evento [id=" + id + ", titulo=" + titulo + ", fecha=" + fecha + ", galerias=" + map_galerias.size() + "]";
     }
 
 }

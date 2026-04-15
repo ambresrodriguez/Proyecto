@@ -182,7 +182,7 @@ public class Proyecto {
             titulo_evento = evento.getTitulo();
             System.out.println("--Listado de eventos--");
             System.out.printf("\n-Id: %d", id_evento);
-            System.out.printf("\n-Titulo: %s", titulo_evento);
+            System.out.printf("\n-Titulo: %s\n", titulo_evento);
             System.out.println("\n----------");
 
         }
