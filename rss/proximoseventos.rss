@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
-        <title>proximos eventos</title>
-        <link>https://www.happinessandco.com/proximoseventos.html</link>
+        <title>Próximos Eventos</title>
+        <link>https://hapinnessandco.com/proximoseventos</link>
+        <description>Esta es la sección de proximos eventos de la página HappinesandCO 
+            en la que se muestran los eventos que estan por venir de nuestra agenda cultural.</description>
+        <languaje>es-es</languaje>
+        <copyrigth>© Copyright 2026 HAPINNESS CO</copyrigth>
+        
+        <!--Eventos-->
+        <item name="Evento1">
+            <title>Silvia Perez Cruz</title>
+            <description>Nuevas y originales canciones para compartir con sonidos familiares y nuevos horizontes.</description>
+            <link>https://hapinnessandco.com/proximoseventos/evento1</link>
+            <pubDate>Tue, 14 Apri 2026 09:46:00 +0200</pubDate>
+            <category>Rosa:musica</category>
+        </item>
+        <item name="Evento2">
+            <title>Constelaciones</title>
+            <description>Una obra de teatro contemporánea que explora la relación entre una física cuántica y un apicultor.</description>
+            <link>https://hapinnessandco.com/proximoseventos/evento2</link>
+            <pubDate>Tue, 14 Apri 2026 09:47:00 +0200</pubDate>
+            <category>Azul:teatro</category>
+        </item>
+        <item name="Evento3">
+            <title>Mujeres en la música</title>
+            <description>Exposición que reune imágenes y materiales de artistas como Rocio Jurado o Aitana.</description>
+            <link>https://hapinnessandco.com/proximoseventos/evento3</link>
+            <pubDate>Tue, 14 Apri 2026 09:51:00 +0200</pubDate>
+            <category>Naranja:exposicion</category>
+        </item>
+        <item name="Evento4">
+            <title>Luís Álvarez Duarte, escultor</title>
+            <description>Un recorrido a través  de la obra sacra y profana del imaginero y escultor andaluz.</description>
+            <link>https://hapinnessandco.com/proximoseventos/evento4</link>
+            <pubDate>Tue, 14 Apri 2026 09:54:00 +0200</pubDate>
+            <category>Naranja:exposicion</category>
+        </item>
+        <item name="Evento5">
+            <title>Cristobal Aviles</title>
+            <description>Una exposición dedicada al crador Cristobal Aviles a través de obras realizadas con hierro, piedra y cerámica.</description>
+            <link>https://hapinnessandco.com/proximoseventos/evento5</link>
+            <pubDate>Tue, 14 Apri 2026 09:56:00 +0200</pubDate>
+            <category>Naranja:exposicion</category>
+        </item>
+        <item name="Evento6">
+            <title>Fraude</title>
+            <description>Pelicula de 1973 sobre un falsificador de arte temido y admirado por museos de todo el mundo.</description>
+            <link>https://hapinnessandco.com/proximoseventos/evento6</link>
+            <pubDate>Tue, 14 Apri 2026 09:58:00 +0200</pubDate>
+            <category>Azul:cine</category>
+        </item>
+        <item name="Evento7">
+            <title>The Silence</title>
+            <description>Para su obra autoficticoa el dramaturgo y director Flak Richter se centra en su propia historia familiar</description>
+            <link>https://hapinnessandco.com/proximoseventos/evento7</link>
+            <pubDate>Tue, 14 Apri 2026 09:59:00 +0200</pubDate>
+            <category>Azul:cine</category>
+        </item>
     </channel>
 </rss>
