@@ -1,27 +1,4 @@
-header {
-    background-color: #ba007b;
-    padding: 0 2rem;
-    display : flex;
-    font-family: 'Archristy', 'Asenine', 'Asenst', 'Asent', 'Asenw';
-    align-items: center;
-    justify-content: space-around;
-    height: 72;
-    color: white;
-}
-
 body{
     font-family: 'Comic Neue';
 }
-nav {
-    display: flex;
 
-}
-.logo_2 {
-    padding: 0;
-    gap: 0;
-
-}
-.img_fraude{
-    width: 100%;
-    height: 330px;
-}
